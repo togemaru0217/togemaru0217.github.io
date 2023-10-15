@@ -1,0 +1,39 @@
+html {
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  
+  /* Your CSS below here */
+
+.shadowbox {
+    width: 200px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #b71c1c;
+    border-radius: 10px;
+    font-size: 1.2rem; /*15px×1.2=18pxになってます*/;
+    text-align: center;
+    line-height: 150px;
+    color: aliceblue;
+    text-shadow: 2px 1px 1px black;
+    box-shadow: 3px 3px 6px -2px #555,
+                3px 3px 6px rgba(255,255,255,0.8) inset,
+                -3px -3px 6px rgba(0, 0, 0, 0.8) inset;
+    background:linear-gradient(to bottom right ,transparent ,rgb(0, 0, 0, calc( 0.2 / 3 )) 30% ),
+               linear-gradient(to bottom right ,transparent ,rgb(0, 0, 0, calc( 0.2 / 3 )) 60% ),
+               linear-gradient(to bottom right ,transparent ,rgb(0, 0, 0, calc( 0.2 / 3 )) 90% );
+    background-color: #ff0000;
+  }
+
+p {
+    font-family: Impact;
+    font-size: 50px;
+    color: aqua;
+  }
+
+  @media (hover: hover) {
+    .shadowbox:hover {
+      background: yellow;
+    }
+  }
